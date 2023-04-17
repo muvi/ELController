@@ -1,0 +1,676 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "EL Controller"
+Date "2021-10-16"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 616A0E4E
+P 2050 1400
+F 0 "#PWR0101" H 2050 1250 50  0001 C CNN
+F 1 "+5V" H 2065 1573 50  0000 C CNN
+F 2 "" H 2050 1400 50  0001 C CNN
+F 3 "" H 2050 1400 50  0001 C CNN
+	1    2050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 616A1B8F
+P 2400 1400
+F 0 "L1" V 2590 1400 50  0000 C CNN
+F 1 "3000uH" V 2499 1400 50  0000 C CNN
+F 2 "" H 2400 1400 50  0001 C CNN
+F 3 "~" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 616A2388
+P 3600 1650
+F 0 "C1" H 3718 1696 50  0000 L CNN
+F 1 "33uF" H 3718 1605 50  0000 L CNN
+F 2 "" H 3638 1500 50  0001 C CNN
+F 3 "~" H 3600 1650 50  0001 C CNN
+	1    3600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1400 3600 1500
+Text GLabel 4350 1400 2    50   Input ~ 0
+P_120V
+$Comp
+L Device:R R1
+U 1 1 616CAEAB
+P 4050 1550
+F 0 "R1" H 4120 1596 50  0000 L CNN
+F 1 "1meg" H 4120 1505 50  0000 L CNN
+F 2 "" V 3980 1550 50  0001 C CNN
+F 3 "~" H 4050 1550 50  0001 C CNN
+F 4 "R" H 4050 1550 50  0001 C CNN "Spice_Primitive"
+F 5 "1meg" H 4050 1550 50  0001 C CNN "Spice_Model"
+F 6 "N" H 4050 1550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 616EAC9D
+P 4050 2150
+F 0 "#PWR0105" H 4050 1900 50  0001 C CNN
+F 1 "GND" H 4055 1977 50  0000 C CNN
+F 2 "" H 4050 2150 50  0001 C CNN
+F 3 "" H 4050 2150 50  0001 C CNN
+	1    4050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 616ED1A8
+P 3600 1850
+F 0 "#PWR0106" H 3600 1600 50  0001 C CNN
+F 1 "GND" H 3605 1677 50  0000 C CNN
+F 2 "" H 3600 1850 50  0001 C CNN
+F 3 "" H 3600 1850 50  0001 C CNN
+	1    3600 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 1750 2    50   Output ~ 0
+BOOST_SENSE
+Wire Wire Line
+	4050 1400 4350 1400
+Wire Wire Line
+	3600 1400 4050 1400
+Connection ~ 4050 1400
+$Comp
+L Device:R R2
+U 1 1 616CB729
+P 4050 1900
+F 0 "R2" H 4120 1946 50  0000 L CNN
+F 1 "22k" H 4120 1855 50  0000 L CNN
+F 2 "" V 3980 1900 50  0001 C CNN
+F 3 "~" H 4050 1900 50  0001 C CNN
+F 4 "R" H 4050 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "22k" H 4050 1900 50  0001 C CNN "Spice_Model"
+F 6 "N" H 4050 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4050 1900
+	1    0    0    -1  
+$EndComp
+Text Notes 2100 2500 0    50   ~ 0
+D=0.958
+Wire Wire Line
+	2050 1400 2250 1400
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6174F730
+P 1050 1150
+F 0 "#FLG0101" H 1050 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 1323 50  0000 C CNN
+F 2 "" H 1050 1150 50  0001 C CNN
+F 3 "~" H 1050 1150 50  0001 C CNN
+	1    1050 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 1800 3600 1850
+Wire Wire Line
+	4050 1700 4050 1750
+Connection ~ 4050 1750
+Wire Wire Line
+	4050 2050 4400 2050
+Wire Wire Line
+	4050 2050 4050 2150
+Connection ~ 4050 2050
+$Comp
+L power:GND #PWR0103
+U 1 1 617578AE
+P 750 1150
+F 0 "#PWR0103" H 750 900 50  0001 C CNN
+F 1 "GND" H 755 977 50  0000 C CNN
+F 2 "" H 750 1150 50  0001 C CNN
+F 3 "" H 750 1150 50  0001 C CNN
+	1    750  1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 6175873B
+P 750 750
+F 0 "#PWR0104" H 750 600 50  0001 C CNN
+F 1 "+5V" H 765 923 50  0000 C CNN
+F 2 "" H 750 750 50  0001 C CNN
+F 3 "" H 750 750 50  0001 C CNN
+	1    750  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61758FC4
+P 1050 750
+F 0 "#FLG0102" H 1050 825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1050 923 50  0000 C CNN
+F 2 "" H 1050 750 50  0001 C CNN
+F 3 "~" H 1050 750 50  0001 C CNN
+	1    1050 750 
+	1    0    0    -1  
+$EndComp
+Text Notes 2050 2200 0    50   ~ 0
+.tran 1us 1s
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 61760A97
+P 900 950
+F 0 "V1" H 1030 1041 50  0000 L CNN
+F 1 "5V" H 1030 950 50  0000 L CNN
+F 2 "" H 900 950 50  0001 C CNN
+F 3 "~" H 900 950 50  0001 C CNN
+F 4 "Y" H 900 950 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 900 950 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 5" H 1030 859 50  0000 L CNN "Spice_Model"
+	1    900  950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  750  900  750 
+Wire Wire Line
+	900  750  1050 750 
+Connection ~ 900  750 
+Wire Wire Line
+	750  1150 900  1150
+Wire Wire Line
+	900  1150 1050 1150
+Connection ~ 900  1150
+$Comp
+L pspice:0 #GND0101
+U 1 1 61743211
+P 1350 1300
+F 0 "#GND0101" H 1350 1200 50  0001 C CNN
+F 1 "0" H 1350 1389 50  0000 C CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "~" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1300 1350 1150
+Wire Wire Line
+	1350 1150 1050 1150
+Connection ~ 1050 1150
+Wire Wire Line
+	3300 1400 3600 1400
+Connection ~ 3600 1400
+$Comp
+L Diode:MM3Zxx D2
+U 1 1 61751DC7
+P 4400 1900
+F 0 "D2" V 4354 1980 50  0000 L CNN
+F 1 "MM3Z3V3T1G" V 4445 1980 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 4400 1725 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/mm3z2v4.pdf" H 4400 1900 50  0001 C CNN
+F 4 "D" H 4400 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "MM3Z3V3T1G" H 4400 1900 50  0001 C CNN "Spice_Model"
+F 6 "N" H 4400 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models.spice.lib" H 4400 1900 50  0001 C CNN "Spice_Lib_File"
+	1    4400 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 1750 4400 1750
+Connection ~ 4400 1750
+Wire Wire Line
+	4400 1750 4850 1750
+Wire Wire Line
+	2700 1800 2700 1850
+$Comp
+L power:GND #PWR0102
+U 1 1 616A2DD9
+P 2700 1850
+F 0 "#PWR0102" H 2700 1600 50  0001 C CNN
+F 1 "GND" H 2705 1677 50  0000 C CNN
+F 2 "" H 2700 1850 50  0001 C CNN
+F 3 "" H 2700 1850 50  0001 C CNN
+	1    2700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1400 3000 1400
+Wire Wire Line
+	2550 1400 2700 1400
+Connection ~ 2700 1400
+Text GLabel 2400 1600 0    50   Input ~ 0
+BOOST_SWITCH
+$Comp
+L Device:Q_NMOS_DGS Q1
+U 1 1 616A5524
+P 2600 1600
+F 0 "Q1" H 2804 1646 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2804 1555 50  0000 L CNN
+F 2 "" H 2800 1700 50  0001 C CNN
+F 3 "~" H 2600 1600 50  0001 C CNN
+F 4 "X" H 2600 1600 50  0001 C CNN "Spice_Primitive"
+F 5 "Q_NMOS_DGS" H 2600 1600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2600 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:US1G D1
+U 1 1 61780910
+P 3150 1400
+F 0 "D1" H 3150 1183 50  0000 C CNN
+F 1 "US1G" H 3150 1274 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 3150 1225 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds16008.pdf" H 3150 1400 50  0001 C CNN
+F 4 "D" H 3150 1400 50  0001 C CNN "Spice_Primitive"
+F 5 "US1G" H 3150 1400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3150 1400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "models.spice.lib" H 3150 1400 50  0001 C CNN "Spice_Lib_File"
+F 8 "2 1" H 3150 1400 50  0001 C CNN "Spice_Node_Sequence"
+	1    3150 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q3
+U 1 1 61C657FD
+P 7850 5150
+F 0 "Q3" H 8055 5196 50  0000 L CNN
+F 1 "TN2130" H 8055 5105 50  0000 L CNN
+F 2 "" H 8050 5250 50  0001 C CNN
+F 3 "~" H 7850 5150 50  0001 C CNN
+	1    7850 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C9E4AF
+P 7850 4850
+F 0 "#PWR?" H 7850 4600 50  0001 C CNN
+F 1 "GND" H 7855 4677 50  0000 C CNN
+F 2 "" H 7850 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 4850 0    50   Output ~ 0
+CH1+
+$Comp
+L Device:Q_NMOS_DGS Q4
+U 1 1 61CAA215
+P 9850 5150
+F 0 "Q4" H 10055 5196 50  0000 L CNN
+F 1 "TN2130" H 10055 5105 50  0000 L CNN
+F 2 "" H 10050 5250 50  0001 C CNN
+F 3 "~" H 9850 5150 50  0001 C CNN
+	1    9850 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10050 4850 2    50   Output ~ 0
+CH1-
+$Comp
+L Device:R R2
+U 1 1 61D01942
+P 9000 4150
+F 0 "R2" H 9070 4196 50  0000 L CNN
+F 1 "1meg" H 9070 4105 50  0000 L CNN
+F 2 "1meg" V 8930 4150 50  0001 C CNN
+F 3 "~" H 9000 4150 50  0001 C CNN
+	1    9000 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 1000 0    50   Input ~ 0
+BOOST_SENSE
+Text GLabel 6300 1450 0    50   Output ~ 0
+P_120V
+Text GLabel 6550 700  0    50   Output ~ 0
+BOOST_SWITCH
+$Comp
+L Simulation_SPICE:VPULSE V?
+U 1 1 61D9CC2C
+P 7200 900
+F 0 "V?" H 7330 991 50  0000 L CNN
+F 1 "VPULSE" H 7330 900 50  0000 L CNN
+F 2 "" H 7200 900 50  0001 C CNN
+F 3 "~" H 7200 900 50  0001 C CNN
+F 4 "Y" H 7200 900 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 7200 900 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 0 pulse(0 3.3 0 0 0 30u 32u)" H 7330 809 50  0000 L CNN "Spice_Model"
+	1    7200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D9CC36
+P 7200 1150
+F 0 "#PWR?" H 7200 900 50  0001 C CNN
+F 1 "GND" H 7205 977 50  0000 C CNN
+F 2 "" H 7200 1150 50  0001 C CNN
+F 3 "" H 7200 1150 50  0001 C CNN
+	1    7200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1100 7200 1150
+Wire Wire Line
+	7200 700  6550 700 
+$Comp
+L power:VDD #PWR?
+U 1 1 61DD3EEF
+P 8800 4000
+F 0 "#PWR?" H 8800 3850 50  0001 C CNN
+F 1 "VDD" H 8815 4173 50  0000 C CNN
+F 2 "" H 8800 4000 50  0001 C CNN
+F 3 "" H 8800 4000 50  0001 C CNN
+	1    8800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q2
+U 1 1 61E907DD
+P 9850 4300
+F 0 "Q2" H 10055 4254 50  0000 L CNN
+F 1 "TP5335" H 10055 4345 50  0000 L CNN
+F 2 "" H 10050 4400 50  0001 C CNN
+F 3 "~" H 9850 4300 50  0001 C CNN
+	1    9850 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 61E9A9B6
+P 7850 4300
+F 0 "Q1" H 8055 4254 50  0000 L CNN
+F 1 "TP5335" H 8055 4345 50  0000 L CNN
+F 2 "" H 8050 4400 50  0001 C CNN
+F 3 "~" H 7850 4300 50  0001 C CNN
+	1    7850 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 5450 7750 5350
+Wire Wire Line
+	9950 5450 9950 5350
+Wire Wire Line
+	9950 4000 9950 4100
+Wire Wire Line
+	7750 4000 7750 4100
+Wire Wire Line
+	8800 4000 8650 4000
+$Comp
+L power:GNDS #PWR?
+U 1 1 61F9B266
+P 8850 5450
+F 0 "#PWR?" H 8850 5200 50  0001 C CNN
+F 1 "GNDS" H 8855 5277 50  0000 C CNN
+F 2 "" H 8850 5450 50  0001 C CNN
+F 3 "" H 8850 5450 50  0001 C CNN
+	1    8850 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5450 9100 5450
+$Comp
+L Diode:BZM55Cxx D2
+U 1 1 61FA4971
+P 9350 4150
+F 0 "D2" V 9304 4230 50  0000 L CNN
+F 1 "ZMM5235B" V 9395 4230 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 9350 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 9350 4150 50  0001 C CNN
+	1    9350 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:BZM55Cxx D3
+U 1 1 61FC7B68
+P 8100 5300
+F 0 "D3" V 8054 5380 50  0000 L CNN
+F 1 "ZMM5235B" V 8145 5380 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 8100 5125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 8100 5300 50  0001 C CNN
+	1    8100 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 5450 8100 5450
+Wire Wire Line
+	8050 5150 8100 5150
+$Comp
+L Device:R R4
+U 1 1 61FD2F23
+P 9000 4450
+F 0 "R4" H 9070 4496 50  0000 L CNN
+F 1 "1meg" H 9070 4405 50  0000 L CNN
+F 2 "" V 8930 4450 50  0001 C CNN
+F 3 "~" H 9000 4450 50  0001 C CNN
+	1    9000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61DE1D7A
+P 8650 5300
+F 0 "R5" H 8720 5346 50  0000 L CNN
+F 1 "1meg" H 8720 5255 50  0000 L CNN
+F 2 "" V 8580 5300 50  0001 C CNN
+F 3 "~" H 8650 5300 50  0001 C CNN
+	1    8650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5450 8650 5450
+Connection ~ 8850 5450
+Connection ~ 8100 5450
+Connection ~ 8650 5450
+Wire Wire Line
+	8650 5450 8100 5450
+Wire Wire Line
+	8100 5150 8650 5150
+Connection ~ 8100 5150
+$Comp
+L Diode:BZM55Cxx D4
+U 1 1 61FEA854
+P 9450 5300
+F 0 "D4" V 9404 5380 50  0000 L CNN
+F 1 "ZMM5235B" V 9495 5380 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 9450 5125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 9450 5300 50  0001 C CNN
+	1    9450 5300
+	0    1    1    0   
+$EndComp
+Connection ~ 9450 5450
+Wire Wire Line
+	9450 5450 9950 5450
+$Comp
+L Device:R R6
+U 1 1 61FEBF08
+P 9100 5300
+F 0 "R6" H 9170 5346 50  0000 L CNN
+F 1 "1meg" H 9170 5255 50  0000 L CNN
+F 2 "" V 9030 5300 50  0001 C CNN
+F 3 "~" H 9100 5300 50  0001 C CNN
+	1    9100 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 9100 5450
+Wire Wire Line
+	9100 5450 9450 5450
+Wire Wire Line
+	9100 5150 9450 5150
+Connection ~ 9450 5150
+Wire Wire Line
+	9450 5150 9650 5150
+$Comp
+L Diode:BZM55Cxx D1
+U 1 1 61FEF10B
+P 8100 4150
+F 0 "D1" V 8054 4230 50  0000 L CNN
+F 1 "ZMM5235B" V 8145 4230 50  0000 L CNN
+F 2 "Diode_SMD:D_MicroMELF" H 8100 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85597/bzm55.pdf" H 8100 4150 50  0001 C CNN
+	1    8100 4150
+	0    1    1    0   
+$EndComp
+Connection ~ 8100 4000
+Wire Wire Line
+	8100 4000 7750 4000
+$Comp
+L Device:R R1
+U 1 1 61FEFE02
+P 8650 4150
+F 0 "R1" H 8720 4196 50  0000 L CNN
+F 1 "1meg" H 8720 4105 50  0000 L CNN
+F 2 "" V 8580 4150 50  0001 C CNN
+F 3 "~" H 8650 4150 50  0001 C CNN
+	1    8650 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 4000
+Wire Wire Line
+	8650 4000 8100 4000
+Wire Wire Line
+	9350 4000 9950 4000
+Wire Wire Line
+	9350 4300 9650 4300
+Wire Wire Line
+	8800 4000 9000 4000
+Connection ~ 8800 4000
+Connection ~ 9350 4000
+Connection ~ 9000 4000
+Wire Wire Line
+	9000 4000 9350 4000
+Wire Wire Line
+	8050 4300 8100 4300
+Connection ~ 8100 4300
+Wire Wire Line
+	8100 4300 8650 4300
+Wire Wire Line
+	9350 4300 9000 4300
+Connection ~ 9350 4300
+Wire Wire Line
+	8650 5150 8650 4850
+Connection ~ 8650 5150
+$Comp
+L Relay_SolidState:MOC3022M U1
+U 1 1 61FFF774
+P 8250 4700
+F 0 "U1" H 8250 5025 50  0000 C CNN
+F 1 "MOC3022M" H 8250 4934 50  0000 C CNN
+F 2 "" H 8050 4500 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 8250 4700 50  0001 L CNN
+	1    8250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:MOC3022M U2
+U 1 1 6200119B
+P 9500 4750
+F 0 "U2" H 9500 5075 50  0000 C CNN
+F 1 "MOC3022M" H 9500 4984 50  0000 C CNN
+F 2 "" H 9300 4550 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 9500 4750 50  0001 L CNN
+	1    9500 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6202C51E
+P 8650 4450
+F 0 "R3" H 8720 4496 50  0000 L CNN
+F 1 "1meg" H 8720 4405 50  0000 L CNN
+F 2 "" V 8580 4450 50  0001 C CNN
+F 3 "~" H 8650 4450 50  0001 C CNN
+	1    8650 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 4300
+Connection ~ 9100 5150
+Wire Wire Line
+	9000 4650 9200 4650
+Wire Wire Line
+	8650 4850 9200 4850
+Wire Wire Line
+	8550 4800 9100 4800
+Wire Wire Line
+	9100 4800 9100 5150
+$Comp
+L power:GND #PWR?
+U 1 1 6204F791
+P 9850 4850
+F 0 "#PWR?" H 9850 4600 50  0001 C CNN
+F 1 "GND" H 9855 4677 50  0000 C CNN
+F 2 "" H 9850 4850 50  0001 C CNN
+F 3 "" H 9850 4850 50  0001 C CNN
+	1    9850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4850 9850 4850
+$Comp
+L Device:R R7
+U 1 1 6206543C
+P 7550 4600
+F 0 "R7" V 7757 4600 50  0000 C CNN
+F 1 "470" V 7666 4600 50  0000 C CNN
+F 2 "" V 7480 4600 50  0001 C CNN
+F 3 "~" H 7550 4600 50  0001 C CNN
+	1    7550 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 4600 8650 4600
+Wire Wire Line
+	7750 4500 7750 4850
+Wire Wire Line
+	7650 4850 7750 4850
+Connection ~ 7750 4850
+Wire Wire Line
+	7750 4850 7750 4950
+Wire Wire Line
+	7950 4800 7850 4800
+Wire Wire Line
+	7850 4800 7850 4850
+Wire Wire Line
+	10050 4850 9950 4850
+Connection ~ 9950 4850
+Wire Wire Line
+	9950 4850 9950 4950
+Wire Wire Line
+	9950 4500 9950 4850
+$Comp
+L Device:R R8
+U 1 1 620986F4
+P 10150 4650
+F 0 "R8" V 10357 4650 50  0000 C CNN
+F 1 "470" V 10266 4650 50  0000 C CNN
+F 2 "" V 10080 4650 50  0001 C CNN
+F 3 "~" H 10150 4650 50  0001 C CNN
+	1    10150 4650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7350 4600 0    50   Output ~ 0
+IN_CH1+
+Text GLabel 10350 4650 2    50   Output ~ 0
+IN_CH1-
+Connection ~ 9000 4300
+Wire Wire Line
+	9000 4600 9000 4650
+Wire Wire Line
+	7350 4600 7400 4600
+Wire Wire Line
+	7700 4600 7950 4600
+Wire Wire Line
+	9800 4650 10000 4650
+Wire Wire Line
+	10300 4650 10350 4650
+$EndSCHEMATC

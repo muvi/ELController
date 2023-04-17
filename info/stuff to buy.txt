@@ -1,0 +1,11 @@
+| Hot air station
+[- capton tape]
+| solder paste
+[- infrared camera]
+- solder paste dispenser
+- fume extractor
+| ESD wristband
+| Entlötlitze
+- circuit board holder
+| flux
+| cleaning alcohol (isopropyl)

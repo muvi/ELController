@@ -1,0 +1,13 @@
+*SRC=US1G;DI_US1G;Diodes;Si;  400V  1.00A  50.0ns   Diodes Inc. 
+.MODEL US1G D( IS=540p RS=0.116 BV=400 IBV=5.00u
++ CJO=37.0p  M=0.333 N=1.70 TT=72.0n )
+
+.model DIODE D(Is=1n Rs=100m N=1.5 Cjo=1p BV=50 IBV=1n)
+
+.model MM3Z3V3T1G D(Is=1n Rs=100m N=1.5 Cjo=1p BV=3.3 IBV=1n)
+
+.model MNMOS NMOS(KP=.001)
+
+.subckt Q_NMOS_DGS 1 2 3
+M1 1 2 3 3 MNMOS
+.ends

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/media/Daten/Projekte/ELController/ideal diode board/ideal_diode.kicad_sch</source>
+    <date>Fri 06 Jan 2023 10:19:56 PM CET</date>
+    <tool>Eeschema 6.0.10</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Ideal diode</title>
+        <company>Light by Christian Baldus</company>
+        <rev>1</rev>
+        <date>2022-01-22</date>
+        <source>ideal_diode.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>623bedf1-e852-44ab-bc61-43d35a682c00</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>4V7</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <libsource lib="el_components" part="BZX84-C4V7,235" description="Zener diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aba72400-fa8d-4b66-9ea3-c5ebacd85a2d</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>4V7</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <libsource lib="el_components" part="BZX84-C4V7,235" description="Zener diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>27c994f6-c38f-4394-8f4e-ffaacb64d598</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>RFN2LAM4STR</value>
+      <footprint>EL-footprints:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/348/rfn2lam4s_e-1869668.pdf</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e84d9b03-87c6-4f29-b35b-6591906299ff</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>RFN2LAM4STR</value>
+      <footprint>EL-footprints:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/348/rfn2lam4s_e-1869668.pdf</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0ca6a64-17da-4eee-8f19-65be127402d4</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>RFN2LAM4STR</value>
+      <footprint>EL-footprints:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/348/rfn2lam4s_e-1869668.pdf</datasheet>
+      <fields>
+        <field name="Installed">NU</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Installed" value="NU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d98664b-709e-4d8d-a528-700a1bac2bba</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>RFN2LAM4STR</value>
+      <footprint>EL-footprints:D_SOD-128</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/348/rfn2lam4s_e-1869668.pdf</datasheet>
+      <fields>
+        <field name="Installed">NU</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Installed" value="NU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70f6c5c1-d28a-4286-90fc-0c451779c246</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07cd396b-a814-4b7f-9849-5c3707fa3d28</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b87b917-8b2e-414c-9710-2f9da98dd040</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa47e4c2-f432-406b-b9c1-3850ab0e2058</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4ea16bf-a022-4f31-bdce-f75749fd4d50</tstamps>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3_Pad_Via</footprint>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9dd932fa-666c-4d43-ac72-367e08da0d30</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>NTD250N65S3H</value>
+      <footprint>EL-footprints:TO-252 3 LD</footprint>
+      <datasheet>https://www.onsemi.com/pdf/datasheet/ntd250n65s3h-d.pdf</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GDS" description="N-MOSFET transistor, gate/drain/source"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5c7aad29-3aaf-430a-8747-e30eb2960791</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a19cc41c-70d4-4766-b598-6bb4800d02d4</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e2be70e-6df2-4d78-844e-b72911590c85</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0a720227-48d8-48ea-a090-04cc09a6eb77</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>349afe3a-9286-42f0-819e-dfa1191ea0ec</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc5a73dd-0ab7-4f19-a974-965af46aff51</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1meg 0.1%</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8bd33f9-2b71-480c-9fee-6ad1972b91d6</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>EL-footprints:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d417d31c-2694-4da6-97b8-dd1c69ea13e8</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>EL-footprints:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcc9e723-e7d7-4fe6-8c7f-eb0f3b4769f6</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>EL-footprints:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48b22695-8757-453b-94a6-520c0b8bec59</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>TC75S59FU(TE85L,F)</value>
+      <footprint>EL-footprints:SSOP-P-0.95</footprint>
+      <datasheet>https://toshiba.semicon-storage.com/info/TC75S57F_datasheet_en_20190911.pdf?did=20998&amp;prodName=TC75S57F</datasheet>
+      <libsource lib="el_components" part="TC75S59FU(TE85L,F)" description="Single Comparator, SSOP5-P-0.95"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fce53ed2-3ab5-40e4-97dc-7ee73255b5cd 7ad29be2-4714-41c0-a47b-91bf1119e255</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>PDSE1-S5-S5</value>
+      <footprint>EL-footprints:DIP-8_W7.62mm_S5-S5-D</footprint>
+      <datasheet>https://www.mouser.de/datasheet/2/670/pdse1_d-1774645.pdf</datasheet>
+      <fields>
+        <field name="Installed">NU</field>
+      </fields>
+      <libsource lib="el_components" part="PDSE1-S5-S5-D" description="5V isolated DC-DC converter"/>
+      <property name="Installed" value="NU"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ideal_diode.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a01cc160-4250-4a7e-ba44-820511582b10</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GDS">
+      <description>N-MOSFET transistor, gate/drain/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="el_components" part="BZX84-C4V7,235">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BZX84-C4V7,235</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="el_components" part="PDSE1-S5-S5-D">
+      <description>5V isolated DC-DC converter</description>
+      <docs>https://www.mouser.de/datasheet/2/670/pdse1_d-1774645.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PDSE1-S5-S5-D</field>
+        <field name="Datasheet">https://www.mouser.de/datasheet/2/670/pdse1_d-1774645.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="4" name="VIN" type="passive"/>
+        <pin num="5" name="+VO" type="passive"/>
+        <pin num="7" name="0V" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="el_components" part="TC75S59FU(TE85L,F)">
+      <description>Single Comparator, SSOP5-P-0.95</description>
+      <docs>https://toshiba.semicon-storage.com/info/TC75S57F_datasheet_en_20190911.pdf?did=20998&amp;prodName=TC75S57F</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TC75S59FU(TE85L,F)</field>
+        <field name="Footprint">EL-footprints:SSOP-P-0.95</field>
+        <field name="Datasheet">https://toshiba.semicon-storage.com/info/TC75S57F_datasheet_en_20190911.pdf?did=20998&amp;prodName=TC75S57F</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="input"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/app/extensions/Library/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/app/extensions/Library/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/app/extensions/Library/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="el_components">
+      <uri>/media/Daten/Projekte/ELController/ideal diode board/../board design/el_components.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="H4" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="VIN" pintype="passive"/>
+    </net>
+    <net code="2" name="+5VP">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="+VO" pintype="passive"/>
+    </net>
+    <net code="3" name="/in">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="H2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="0V" pintype="passive"/>
+    </net>
+    <net code="4" name="/out">
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="H3" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="Q1" pin="2" pinfunction="D" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="H5" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U2" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="3" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="7" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="4" pintype="output"/>
+    </net>
+    <net code="8" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="9" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="unconnected-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="12" name="unconnected-(D2-Pad2)">
+      <node ref="D2" pin="2" pinfunction="NC" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

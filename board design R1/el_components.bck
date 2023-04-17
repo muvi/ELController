@@ -1,0 +1,163 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N4002
+D 100V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 1N4003
+D 200V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 1N4004
+D 400V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 1N4005
+D 600V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 1N4006
+D 800V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 1N4007
+D 1000V 1A General Purpose Rectifier Diode, DO-41
+K diode
+F http://www.vishay.com/docs/88503/1n4001.pdf
+$ENDCMP
+#
+$CMP 750032050
+D Transformer, single primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP BA157
+D 400V 1A Fast recovery Rectifier Diode, DO-41
+K diode
+F http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157
+$ENDCMP
+#
+$CMP BA158
+D 600V 1A Fast recovery Rectifier Diode, DO-41
+K diode
+F http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157
+$ENDCMP
+#
+$CMP BA159
+D 1000V 1A Fast recovery Rectifier Diode, DO-41
+K diode
+F http://diotec.com/tl_files/diotec/files/pdf/datasheets/ba157
+$ENDCMP
+#
+$CMP BD93291EFJ
+F https://www.mouser.de/datasheet/2/348/bd93291efj-e-1874257.pdf
+$ENDCMP
+#
+$CMP DESD1CAN2WQ-7
+D Bidirectional dual transient-voltage-suppression diode, 24V
+K diode TVS thyrector
+F https://www.mouser.de/datasheet/2/115/DIOD_S_A0011302732_1-2543698.pdf
+$ENDCMP
+#
+$CMP GNDHV
+D Power symbol creates a global label with name "GNDHV" , high voltage ground
+K power-flag
+$ENDCMP
+#
+$CMP GS1AWG
+D 50V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1BWG
+D 100V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1DWG
+D 200V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1GWG
+D 400V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1JWG
+D 600V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1KWG
+D 800V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP GS1MWG
+D 1000V 1A General Purpose Rectifier Diode
+K diode
+F https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+$ENDCMP
+#
+$CMP LT8304
+D 100VIN Micropower Isolated Flyback Converter with 150V/2A Switch
+K Flyback switcher
+F https://www.mouser.de/datasheet/2/609/8304fa-1271982.pdf
+$ENDCMP
+#
+$CMP LTV-846S
+D DC Quad Optocoupler, Vce 80V, PDIP16
+K NPN DC Quad Optocoupler
+F https://www.mouser.de/datasheet/2/239/LTV_8X6_series-2887056.pdf
+$ENDCMP
+#
+$CMP PDP1-S5-S5-M
+F https://www.mouser.de/datasheet/2/670/pdp1_m-1825428.pdf
+$ENDCMP
+#
+$CMP RQ3E100BN
+D N-MOSFET transistor
+K transistor NMOS N-MOS N-MOSFET
+F https://www.mouser.de/datasheet/2/348/ROHM_S_A0009370623_1-2562931.pdf
+$ENDCMP
+#
+$CMP VHV
+D Power symbol creates a global label with name "VHV"
+K power-flag
+$ENDCMP
+#
+$CMP VSWH
+D Power symbol creates a global label with name "VHV"
+K power-flag
+$ENDCMP
+#
+$CMP VSWL
+D Power symbol creates a global label with name "VHV"
+K power-flag
+$ENDCMP
+#
+$CMP Wuerth_750315839
+D 4-36V, 3.2A , 50 - 200kHz, 1:10, Center Tapped, SMD
+K Power Center Tapped Flyback Transformer
+F https://www.we-online.com/catalog/datasheet/750315839.pdf
+$ENDCMP
+#
+#End Doc Library

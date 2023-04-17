@@ -1,0 +1,10 @@
+CSample = 3.5pF
+RSample = 3.5KOhm
+
+Datasheet page 885
+
+for 8 bits of accuracy:
+t_samplehold = (RSample + RSource) * CSample * (n+1) * ln(2)
+t_samplehold = (3500 + RSource) * 0.0000000000035 * 6.24
+t_samplehold = (3500 + 22000) * 0.0000000000035 * 6.24
+t_samplehold = 0.000000557s -> 1795332.14 Hz

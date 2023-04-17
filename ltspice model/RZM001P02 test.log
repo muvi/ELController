@@ -1,0 +1,23 @@
+Circuit: * D:\Projekte\ELController\ltspice model\RZM001P02 test.asc
+
+Limiting rise time of source v2 to 5e-007
+Limiting fall time of source v2 to 5e-007
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Mar 29 22:09:17 2022
+Total elapsed time: 0.073 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 28482
+traniter = 28450
+tranpoints = 11526
+accept = 8920
+rejected = 2606
+matrix size = 11
+fillins = 3
+solver = Normal
+Matrix Compiler1: 878 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.2
+

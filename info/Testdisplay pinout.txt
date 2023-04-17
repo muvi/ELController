@@ -1,0 +1,14 @@
+1 - bottom left -
+2 - bottom -
+3 - bottom right -
+4 - middle -
+5 - top left -
+6 - top right -
+7 - top -
+8 - 1st digit +
+9 - 2nd digit +
+10 - 3rd digit +
+11 - dot -
+12 - NC
+13 - NC
+14 - NC

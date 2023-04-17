@@ -1,0 +1,58 @@
+EL-Wire Capacitance:
+10.07nF (4m) = 2.52nF/m
+363pF (1m) = 0.36nF/m
+18.02nF (5m) = 3.60nF/m
+
+EL-Wire Resistance @2kHz: 
+4m-test: 31.58kOhm
+1m-test: 221.05kOhm
+5m-test: 22.105kOhm
+
+EL-Wire Amps:
+~2mA/m
+~0.34W/m
+
+possible switching frequencys at 48MHz CPU speed:
+- 48MHz divided by powers of 2 (up to 1024)
+-> 1.5 MHz is possible
+- switching speed with current optocouplers: max 55555.56 Hz
+
+EL-Wire
+
+Gesamtleistung des Inverters von Reichelt:
+~130mA @120V
+
+Keyword for searching transformers:
+SMPS transformer
+
+clearances: https://minntronix.com/wp-content/uploads/2019/11/CreepageandClearance.pdf
+
+Transformer candidates:
+https://www.digikey.de/en/products/detail/w%C3%BCrth-elektronik/750811914/4725528
+
+Dimmen:
+https://www.dmlights.com/help/lighting/different-methods-dimming/
+
+Flyback controller chip candidates:
+- https://www.ti.com/lit/ds/symlink/lm25180.pdf?ts=1639436932939&ref_url=https%253A%252F%252Fwww.google.com%252F
+- https://www.analog.com/media/en/technical-documentation/data-sheets/LT8302-8302-3.pdf
+
+Power electronics course
+- https://www.youtube.com/watch?v=A78yP8oApqk
+
+Beispiel Buck-boost converter: https://www.instructables.com/DIY-BuckBoost-Converter-Flyback/
+
+Attiny für Powermanagement: https://www.digikey.de/de/products/detail/microchip-technology/ATTINY25V-15MT/1914688
+
+GUTE Schaltung: https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/1109.html
+
+Trafo für Flyback Converter: https://www.digikey.de/de/products/detail/w%C3%BCrth-elektronik/750315839/14308061
+chip für flyback Converter: https://www.mouser.de/datasheet/2/609/8304fa-1271982.pdf
+MOSFETS:
+- N-Channel: https://www.mouser.de/datasheet/2/268/TN2130_N_Channel_Enhancement_Mode_Vertical_DMOS_FE-1863823.pdf
+- P-CHannel: https://www.mouser.de/datasheet/2/268/TP5335_P_Channel_Enhancement_Mode_Vertical_DMOS_FE-1863815.pdf
+Optokoppler: https://www.mouser.de/datasheet/2/239/MOC302-1175440.pdf
+Diode: https://www.mouser.de/datasheet/2/1057/GS1AWG_SERIES-1870089.pdf
+
+Controller Candidate: https://www.mouser.de/ProductDetail/Microchip-Technology-Atmel/ATSAMD20G14A-MN?qs=sGAEpiMZZMuI9neUTtPr7xyJO2wA63JMzkvlDdfa2Y%2FQ36eid2QLqQ%3D%3D
+even better candidate: https://www.mouser.de/ProductDetail/Microchip-Technology-Atmel/ATSAMD21G15B-AU?qs=sGAEpiMZZMuI9neUTtPr7xyJO2wA63JMMt8VpM6E%2FGB0tyFz29AisQ%3D%3D

@@ -1,0 +1,25 @@
+JOB  :  4600289a_y2
+STEP :  orig
+DATE :  14 Jun 2022
+TIME :  18:36:37
+Created on GENESIS
+
+*********************************
+Action : Pad Construction (Automatic)
+Layer  : tl
+
+
+   Constructed Pads
+   ================
+   Name(Pad) / Count
+   -----------------
+   rect1100x600             3
+
+*********************************
+Action : Pad Construction (Automatic)
+Layer  : bl
+
+
+   Constructed Pads
+   ================
+   No results

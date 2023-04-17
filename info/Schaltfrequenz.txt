@@ -1,0 +1,4 @@
+Für 256 verschiedene Helligkeitsstufen bei 2kHz ist nötig:
+- 6 mal pro Welle schalten (also 3 mal pro Halbwelle)
+- Eine Schaltfrequenz von 18kHz
+- 

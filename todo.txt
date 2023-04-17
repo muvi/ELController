@@ -1,0 +1,4 @@
+? dip_switch.c / ac_util.c./.h: locks bei Set positive mux input entfernen
+
+- add switches (box 3) to inventory management
+

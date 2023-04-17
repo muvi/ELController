@@ -1,0 +1,23 @@
+Circuit: * D:\Projekte\ELController\ltspice model\12V input dampening.asc
+
+Limiting rise time of source v1 to 1e-006
+Limiting fall time of source v1 to 1e-006
+.OP point found by inspection.
+
+Date: Wed Feb 15 19:30:11 2023
+Total elapsed time: 0.663 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 590105
+traniter = 590105
+tranpoints = 254239
+accept = 204309
+rejected = 49930
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 200 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 394 bytes object code size  0.1/0.1/[0.1]
+

@@ -1,0 +1,16 @@
+* D:\Projekte\ELController\ltspice model\output dampening.asc
+V1 N001 0 PULSE(0V 170V 0 0 0 10us 20us)
+C1 N003 0 6µF
+C2 N004 0 16µF
+L1 N003 N004 3µH
+R1 N004 0 200k
+R2 N005 N005 1
+C3 N004 N005 47nF
+R3 N002 N001 1
+D1 N002 N003 D
+C4 N005 0 47nF
+.model D D
+.lib C:\users\christian\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 100ms
+.backanno
+.end

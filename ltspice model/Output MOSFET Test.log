@@ -1,0 +1,41 @@
+Circuit: * D:\Projekte\ELController\ltspice model\Output MOSFET Test.asc
+
+Limiting rise time of source v5 to 5e-006
+Limiting fall time of source v5 to 5e-006
+WARNING: Node N004 is floating.
+WARNING: Node N010 is floating.
+
+Instance "m:u1:2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.00100083
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 0.00100083
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Heightened Def Con from 2.37863e-006 ++++++++++++++++++++++++++++++++++++++++++++++++++Fatal Error: Analysis:  Time step too small; time = 2.37863e-006, timestep = 1.25e-019: trouble with u1:pmos-instance m:u1:1
+

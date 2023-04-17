@@ -1,0 +1,21 @@
+Circuit: * Z:\media\Daten\Projekte\ELController\ltspice model\Filter Test R2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Mar 18 20:34:10 2022
+Total elapsed time: 0.182 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 59152
+traniter = 59149
+tranpoints = 29575
+accept = 26839
+rejected = 2736
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1:      13 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: 447 bytes object code size  0.1/0.1/[0.1]
+

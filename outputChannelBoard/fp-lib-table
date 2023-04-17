@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "EL-footprints")(type "KiCad")(uri "/media/Daten/Projekte/ELController/board design/EL-footprints.pretty")(options "")(descr ""))
+)

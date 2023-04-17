@@ -1,0 +1,3 @@
+- coil may be saturated
+- "improved" method of regulation as currently used may be worse than the simple one (normal and inverse sine)
+-> different RDSon of the P and N channel mosfets may cause problems. Investigate this next!

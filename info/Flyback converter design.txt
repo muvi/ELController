@@ -1,0 +1,16 @@
+DCM flyback converter reverse conduction time
+- found at: https://www.powerelectronicsnews.com/design-features-of-a-dcm-flyback-converter/
+- t_2 = (t_1 * V_in) / ((V_out + V_d) * (N_p/N_s))
+  -> t_2: reverse conduction time
+  -> t_1: on time / forward conduction time
+  -> V_in: Input voltage
+  -> V_out: current output voltage in capacitor
+  -> V_d: Diode voltage drop
+  -> N_p: Primary turns
+  -> N_s: Secondary turns
+  
+t_1 = 2us
+V_in = 12V
+V_out = 0V
+N_p/N_s = 0.1
+

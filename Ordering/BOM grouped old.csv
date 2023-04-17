@@ -1,0 +1,71 @@
+Item,Qty,Reference(s),Value,In Cart,"Additional Info (Voltage, etc)"
+1,8,"C1, C5, C16, C20, C23, C27, C10, C12 ",10uF,yes,"12V, …"
+2,6,"C2, C3, C4, C6, C24, C30",100nF,yes,12V?
+3,2,"C7, C8",15pF,yes,3.3V
+4,2,"C9, C11",1uF,yes,"3.3V, 12V"
+6,1,C13,"47uF, GRM32EC81C476KE15K",yes,12v
+7,1,C14,"1uF, 200V",yes,170V
+8,3,"C15, C28, C29",Y2 1nF,yes,170V
+9,2,"C17, C26",22uF,yes,5V
+10,4,"C18, C19, C21, C22",47uF,yes,5V
+11,1,C25,680pF,yes,3.3V
+12,1,C31,4.7nF,yes,5V
+13,1,D1,LED_Dual_CACA,yes,
+14,1,"D2, D3",FM4007W-W,yes,
+16,1,D4,BZD27B180P-M3-08,yes,
+17,2,"D5, D7",BZX8450-C1V8-QR,yes,
+18,1,D6,"BZX84-C27,215",yes,
+19,1,D8,"PMEG3050EP,115",yes,
+20,1,D9,DESD1CAN2WQ-7,"No, maybe select a different component with lower clamping voltage",
+21,1,D10,BAT54A_R1_00001 ,yes,
+22,1,D11,ZMM5226B,yes,
+23,1,D12,PRTR5V0U2X,yes,
+24,1,F1,ERB-RE5R00V,yes,
+25,1,F2,F0402G0R10FNTR,"No, more thought required, too expensive",
+26,2,"FB1, FB2",MMZ1608Y221BTD25 ,yes,
+27,4,"H1, H2, H3, H4",MountingHole_Pad,nothing to buy,
+28,1,J1,01x01_Male,,
+29,1,J2,54-00164,"yes, digikey",
+30,1,J3,AC3MAH-AU-PRE,yes,
+31,1,J4,SWD_Connector,"yes, digikey",
+32,1,J5,AC3FAH2-AU-PRE,yes,
+33,1,J6,Conn_01x02,,
+34,1,J7,Conn_01x03,,
+35,2,"J8, J10",Conn_01x04,,
+36,1,J9,USB_B_Micro,yes,
+37,8,"J11, J12, J13, J14, J15, J16, J17, J18",Conn_01x02_Female (JST-SM),,
+38,4,"JP1, JP2, JP3, JP5",SolderJumper_2_Open,nothing to buy,
+39,1,JP4,SolderJumper,nothing to buy,
+40,1,L1,22uH,,
+41,2,"L2, L3",6.8uH,,
+42,1,L4,2.2uH,,
+43,3,"Q1, Q2, Q4",RK7002BMT116,yes,
+44,1,Q3,RQ3E100BN,"yes, vgs a bit too high",
+45,16,"Q5, Q7, Q9, Q11, Q13, Q15, Q17, Q19, Q21, Q23, Q25, Q27, Q29, Q31, Q33, Q35",FQD4P25TM-WS,FQD5P20TM,limit current to 5A with 33 ohm fusible resistor
+46,16,"Q6, Q8, Q10, Q12, Q14, Q16, Q18, Q20, Q22, Q24, Q26, Q28, Q30, Q32, Q34, Q36",IPD50R2K0CEAUMA1,FDD6N25TM,limit current to 5A with 33 ohm fusible resistor
+47,4,"R1, R6, R11, R32",10k,,
+48,3,"R2, R7, R12",560,,
+49,3,"R3, R8, R13",1k2,,
+50,3,"R4, R9, R14",2k2,,
+51,3,"R5, R10, R15",4k7,,
+52,34,"R16, R17, R37, R38, R41, R42, R45, R46, R49, R50, R53, R54, R57, R58, R61, R62, R65, R66, R69, R70, R73, R74, R77, R78, R81, R82, R85, R86, R89, R90, R93, R94, R97, R98",470,,
+53,5,"R18, R19, R26, R34, R35",1meg,"yein, too0 much",
+54,1,R20,DNP,,
+55,2,"R21, R24",43k 1%,,
+56,1,R22,22,,
+57,2,"R23, R25",1.5k 1%,,
+58,1,R27,16k,,
+59,1,R28,5.1k,,
+60,1,R29,10meg,,
+61,34,"R30, R31, R36, R39, R40, R43, R44, R47, R48, R51, R52, R55, R56, R59, R60, R63, R64, R67, R68, R71, R72, R75, R76, R79, R80, R83, R84, R87, R88, R91, R92, R95, R96, R99",1k,"other part, too low resistance",
+62,1,R33,330,,
+63,1,SW1,SW_DIP_x12,"yes, digikey",
+64,2,"T1, T2",750032050,yes,
+65,1,U1,ATSAMD21G15B-A,yes,
+66,1,U2,MP5000A,yes,
+67,2,"U3, U4",PDP1-S5-S5-M,"no, digikey, use 12V device instead of this",
+68,1,U5,BD93291EFJ,yes,
+69,1,U6,MAX485E,"yes, digikey",
+70,8,"U7, U8, U9, U10, U11, U12, U13, U14",LTV-247,"yes, faster device needed",
+71,1,Y1,"SSP-T7-F, MS1V-T1K",,
+,,Tristate output an übrigen  Timer anschließen,,,

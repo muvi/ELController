@@ -1,0 +1,188 @@
+*****************************************************************
+******STMicroelectronics MOSFET, IGBT and Bipolar Library *******
+*****************************************************************
+*				 			                                    *
+* Models provided by STMicroelectronics are not guaranteed to   *
+* fully represent all the specifications and operating	        *
+* characteristics of the product behavior that they reproduce.  *
+* The model describes the characteristics of a typical device.  *
+* In all cases, the current product data sheet contains all     *
+* information to be used like final design guidelines and the   *
+* only actual performance specification.                        *
+* Altough models can be a useful tool in evaluating device      *
+* performance, they cannot model exact device performance under *
+* all conditions.						                        *
+* STMicroelectronics therefore does not assume any              *
+* responsibility arising from their use.                        *
+* STMicroelectronics reserves the right to change models        *
+* without prior notice.                                         *
+*                                                               *
+*****************************************************************
+* REV.11.1														*
+* Nov.2018                                                      *
+*****************************************************************
+
+.SUBCKT STN6N60M2_V2 drain gate source 
+*****************************************************************
+E1	Tj	Val_T	VALUE={TEMP}
+R1	Val_T	0	1E-03
+*****************************************************************
+Rtk	 Tj 0 1E010
+Rtk1 Tj 0 1E010
+*****************************************************************
+RLd drain d1k 10
+Ld drain d1k 0.5E-09
+V_Read d1k d1 0
+RLs source ss 10
+Ls source ss 2E-09
+RLg gate g2 10
+Lg gate g2 4.5E-09
+Rg1 g2 g {Rg}
+.PARAM  Rg=9
+*****************************************************************
+.PARAM AreaCap={1} Area={1} Gfs={1}
+*****************************************************************
+.PARAM  Vth0=3.39 KpSat0=4 KpLin0=5   
+.PARAM  Rs={10E-03/Area} Drs=-1.5 
+.PARAM  Vthx=5.5E-03 KSat=-1.2 KLin=-1.2    
+.PARAM  Lambda=0.004 Rdrain={0.98/Area}  
+.PARAM  Rx=6.5 Unt=-2.65
+*****************************************************************
+.FUNC Vth1(x) {Vth0-Vthx*(x-27)}
+.FUNC kpsat(x) {KpSat0*((x+273)/300)**(KSat)}
+.FUNC kplin(x) {KpLin0*((x+273)/300)**(KLin)}
+*****************************************************************
+**************************GRmos**********************************
+V2xx  d1 22xxx 0
+E2xxx 22xxx d VALUE={R2(I(V2xx),V(TJ))}
+.FUNC R2(I1,T2) {1*(I1*(Rdrain+1E-06*I1**Rx)/((((T2+273)/300)**(Unt))*1))}
+*****************************************************************
+****************************GRS**********************************
+R_Grs ss s 1E03
+V1xx 11xxx ss 0
+E1xxx 11xxx s VALUE={R1(Limit(I(V1xx),-1MEG,1MEG),V(TJ))}
+.FUNC R1(I1,T1) {1*(-(I1)*((Rs/(1*(((T1+273)/300)**(Drs))))))}
+*****************************************************************
+Gmos d s VALUE {0.9*Gfs*(IF(V(d,s)>0,(IF(V(g,s)<Vth1(V(TJ)),0,
++(IF((V(d,s)<(V(g,s)-Vth1(V(TJ)))*kpsat(V(TJ))/kplin(V(TJ))),(1+Lambda*V(d,s))*kplin(V(TJ))/2*V(d,s)*
++(2*(V(g,s)-Vth1(V(TJ)))-kplin(V(TJ))/kpsat(V(TJ))*V(d,s)),
++(1+Lambda*V(d,s))*kpsat(V(TJ))/2*(V(g,s)-Vth1(V(TJ)))**2)))),-(IF(V(g,s)<Vth1(V(TJ)),0,
++(IF((V(s,d)<(V(g,s)-Vth1(V(TJ)))*kpsat(V(TJ))/kplin(V(TJ))),(1+Lambda*V(s,d))*kplin(V(TJ))/2*V(s,d)*
++(2*(V(g,s)-Vth1(V(TJ)))-kplin(V(TJ))/kpsat(V(TJ))*V(s,d)),
++(1+Lambda*V(s,d))*kpsat(V(TJ))/2*(V(g,s)-Vth1(V(TJ)))**2))))))} 
+*****************************************************************
+************************** Capacitance **************************
+
+****************************** CGS ******************************
+CGS source g {220E-12*AreaCap}
+RCGS source g 1000E06 
+*****************************************************************
+**************************** CMiller ****************************
+EDeV DeV1 0 VALUE {V(d,g)}
+C_DeV1 DeV1 DeV2 1E-12
+R_DeV DeV2 DeV3 1E-06
+V_Miller DeV3 0 0 
+G_Miller d g VALUE ={AreaCap*V(Alfa)*i(V_Miller)*1E12}
+*****************************************************************
+RCap Alfa 0 1E03
+ECap Alfa 0 TABLE ={V(d,g)}
++(0.1,159.11p) 
++(0.2,155.91p) 
++(0.5,145.77p) 
++(1,126.46p) 
++(2,96.05p) 
++(3,77.05p) 
++(5,55.35p) 
++(7,41.52p) 
++(10,25.47p) 
++(15,8.09p) 
++(20,5.8p) 
++(25,4.98p) 
++(30,4.56p) 
++(40,3.94p) 
++(50,3.59p) 
++(100,3.35p) 
++(150,3.32p) 
++(200,3.5p) 
++(250,3.38p) 
++(300,3.49p) 
++(350,3.7p) 
++(400,3.79p) 
++(450,3.94p) 
++(500,4.1p) 
++(550,4.17p) 
++(600,4.33p) 
+*****************************************************************
+***************************** COSS ******************************
+EDeVc DeV1c 0 VALUE {V(d,s)}
+C_DeV1c DeV1c DeV2c 1E-12
+R_DeVc DeV2c DeV3c 1E-06
+V_Millerc DeV3c 0 0 
+G_Coss d s VALUE ={AreaCap*V(Alfa2)*i(V_Millerc)*1E12}
+*****************************************************************
+RCap2 Alfa2 0 1E03
+ECap2 Alfa2 0 TABLE ={V(d,s)}
++(0.1,1653.48p) 
++(0.2,1550.01p) 
++(0.5,1361.24p) 
++(1,1166.01p) 
++(2,954.15p) 
++(3,826p) 
++(5,684.66p) 
++(7,596.68p) 
++(10,469.45p) 
++(15,141.53p) 
++(20,96.73p) 
++(25,79.35p) 
++(30,65.12p) 
++(40,45.04p) 
++(50,28.63p) 
++(100,9.03p) 
++(150,7.82p) 
++(200,7.05p) 
++(250,6.6p) 
++(300,6p) 
++(350,5.06p) 
++(400,4.54p) 
++(450,3.9p) 
++(500,3.59p) 
++(550,3.42p) 
++(600,3.2p) 
+*****************************************************************
+***************************** BV ********************************
+.PARAM RAV=2 BVDSS=1
+G_BVdss d1bVdss1 ss VALUE={I_BVdss(V(d1bVdss1,ss),V(Tj))}
+R_GBdss d1bVdss1 0 1E12
+.FUNC I_BVdss(z,k1) {exp(min(-175+z/(bvd(k1)),7))}
+.FUNC bvd(k) {3.75*BVDSS+0.0033*k}
+R_BVdss d1 d1bVdss1 {RAV}
+*****************************************************************
+***************************** VF ********************************
+.PARAM ResDiodo={0.025/Area}
+V_Diodo d1zd d1z 0
+G_Diode source d1zd VALUE={I_Diode(V(source,d1zd),V(Tj))}
+R_X source d1zd 1E12
+.FUNC I_Diode(z3,k3) {exp(min(-15+z3/(did(k3)),7))}
+.FUNC did(k4) {0.0555-75E-06*k4}
+R_G_R_didd d1 d1z {ResDiodo}
+*****************************************************************
+************************** Recovery Diode ***********************
+E_E001 ba 0 VALUE {-I(V_Diodo)}
+R_R002 aa ba 25E03
+C aa 0 1E-12
+.PARAM Irrm=15E04
+**************************** NONTOCC ****************************
+R_edep drain d_dedep 30
+E_Eds d_dedep edep VALUE {-V(aa,0)*Irrm*AreaCap}
+Edeva dev1a 0 value {v(edep,source)}
+C_dev1a dev1a dev2a 1E-12
+R_deva dev2a dev3a 1E-06
+V_millera dev3a 0 0 
+G_millera edep source  value ={v(alfaa)*i(V_millera)*1E12}
+*****************************************************************
+Rcapa alfaa 0 1E03
+Ecapa alfaa 0 TABLE ={V(Tj)}
++(25,1p)
++(150,1.05p)  
+*****************************************************************
+.ENDS STN6N60M2_V2

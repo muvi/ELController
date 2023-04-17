@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1300 2100 0    50   Input ~ 0
+CH1+
+$Comp
+L power:+3V3 #PWR?
+U 1 1 62B89A86
+P 1400 1550
+AR Path="/62B89A86" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89A86" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 1400 1400 50  0001 C CNN
+F 1 "+3V3" H 1415 1723 50  0000 C CNN
+F 2 "" H 1400 1550 50  0001 C CNN
+F 3 "" H 1400 1550 50  0001 C CNN
+	1    1400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 62B89A8C
+P 2550 2650
+AR Path="/62B89A8C" Ref="Q?"  Part="1" 
+AR Path="/62B628F2/62B89A8C" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2755 2696 50  0000 L CNN
+F 1 "IPD50R2K0CEAUMA1" H 2755 2605 50  0000 L CNN
+F 2 "" H 2750 2750 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/196/Infineon-IPD50R2K0CE-DS-v02_03-EN-1731730.pdf" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:LTV-846S U?
+U 1 1 62B89A92
+P 1900 1650
+AR Path="/62B89A92" Ref="U?"  Part="1" 
+AR Path="/62B628F2/62B89A92" Ref="U?"  Part="1" 
+F 0 "U?" H 1900 1975 50  0000 C CNN
+F 1 "LTV-846S" H 1900 1884 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1700 1450 50  0001 L CIN
+F 3 "https://www.mouser.de/datasheet/2/239/LTV_8X6_series-2887056.pdf" H 1900 1650 50  0001 L CNN
+	1    1900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:VHV #PWR?
+U 1 1 62B89A98
+P 2650 1250
+AR Path="/62B89A98" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89A98" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 2650 1100 50  0001 C CNN
+F 1 "VHV" H 2665 1423 50  0000 C CNN
+F 2 "" H 2650 1250 50  0001 C CNN
+F 3 "" H 2650 1250 50  0001 C CNN
+	1    2650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:GNDHV #PWR?
+U 1 1 62B89A9E
+P 2650 3150
+AR Path="/62B89A9E" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89A9E" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2650 2900 50  0001 C CNN
+F 1 "GNDHV" H 2655 2977 50  0000 C CNN
+F 2 "" H 2650 3150 50  0001 C CNN
+F 3 "" H 2650 3150 50  0001 C CNN
+	1    2650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:VSWH #PWR?
+U 1 1 62B89AA4
+P 2400 1950
+AR Path="/62B89AA4" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89AA4" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 2400 1800 50  0001 C CNN
+F 1 "VSWH" H 2415 2123 50  0000 C CNN
+F 2 "" H 2400 1950 50  0001 C CNN
+F 3 "" H 2400 1950 50  0001 C CNN
+	1    2400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:LTV-846S U?
+U 2 1 62B89AAA
+P 1900 2550
+AR Path="/62B89AAA" Ref="U?"  Part="2" 
+AR Path="/62B628F2/62B89AAA" Ref="U?"  Part="2" 
+F 0 "U?" H 1900 2875 50  0000 C CNN
+F 1 "LTV-846S" H 1900 2784 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1700 2350 50  0001 L CIN
+F 3 "https://www.mouser.de/datasheet/2/239/LTV_8X6_series-2887056.pdf" H 1900 2550 50  0001 L CNN
+	2    1900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L el_components:VSWL #PWR?
+U 1 1 62B89AB0
+P 2400 2350
+AR Path="/62B89AB0" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89AB0" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 2400 2200 50  0001 C CNN
+F 1 "VSWL" H 2415 2523 50  0000 C CNN
+F 2 "" H 2400 2350 50  0001 C CNN
+F 3 "" H 2400 2350 50  0001 C CNN
+	1    2400 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 2100 2    50   Input ~ 0
+CHOUT1+
+$Comp
+L Device:R R?
+U 1 1 62B89AB7
+P 1400 1900
+AR Path="/62B89AB7" Ref="R?"  Part="1" 
+AR Path="/62B628F2/62B89AB7" Ref="R?"  Part="1" 
+F 0 "R?" H 1330 1854 50  0000 R CNN
+F 1 "470" H 1330 1945 50  0000 R CNN
+F 2 "" V 1330 1900 50  0001 C CNN
+F 3 "~" H 1400 1900 50  0001 C CNN
+	1    1400 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62B89ABD
+P 1400 2300
+AR Path="/62B89ABD" Ref="R?"  Part="1" 
+AR Path="/62B628F2/62B89ABD" Ref="R?"  Part="1" 
+F 0 "R?" H 1470 2346 50  0000 L CNN
+F 1 "470" H 1470 2255 50  0000 L CNN
+F 2 "" V 1330 2300 50  0001 C CNN
+F 3 "~" H 1400 2300 50  0001 C CNN
+	1    1400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2650 2200 2650
+Wire Wire Line
+	1600 2450 1400 2450
+Wire Wire Line
+	1400 1750 1600 1750
+Wire Wire Line
+	1400 2050 1400 2100
+Wire Wire Line
+	1300 2100 1400 2100
+Connection ~ 1400 2100
+Wire Wire Line
+	1400 2100 1400 2150
+Wire Wire Line
+	1400 1550 1600 1550
+Wire Wire Line
+	1400 2650 1600 2650
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 62B89ACC
+P 2550 1550
+AR Path="/62B89ACC" Ref="Q?"  Part="1" 
+AR Path="/62B628F2/62B89ACC" Ref="Q?"  Part="1" 
+F 0 "Q?" H 2755 1504 50  0000 L CNN
+F 1 "FQD4P25TM-WS" H 2755 1595 50  0000 L CNN
+F 2 "" H 2750 1650 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/308/1/FQD4P25TM_WS_D-2313960.pdf" H 2550 1550 50  0001 C CNN
+	1    2550 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2650 1750 2650 2100
+Wire Wire Line
+	2200 1550 2350 1550
+Wire Wire Line
+	2400 2450 2400 2350
+Wire Wire Line
+	2200 2450 2400 2450
+Wire Wire Line
+	2200 1750 2200 1950
+Wire Wire Line
+	2200 1950 2400 1950
+Wire Wire Line
+	2900 2100 2650 2100
+Connection ~ 2650 2100
+Wire Wire Line
+	2650 2100 2650 2450
+Wire Wire Line
+	2650 1350 2650 1300
+$Comp
+L Device:R R?
+U 1 1 62B89ADC
+P 2500 1300
+AR Path="/62B89ADC" Ref="R?"  Part="1" 
+AR Path="/62B628F2/62B89ADC" Ref="R?"  Part="1" 
+F 0 "R?" V 2293 1300 50  0000 C CNN
+F 1 "1k" V 2384 1300 50  0000 C CNN
+F 2 "" V 2430 1300 50  0001 C CNN
+F 3 "~" H 2500 1300 50  0001 C CNN
+	1    2500 1300
+	0    1    1    0   
+$EndComp
+Connection ~ 2650 1300
+Wire Wire Line
+	2650 1300 2650 1250
+$Comp
+L Device:R R?
+U 1 1 62B89AE4
+P 2500 3050
+AR Path="/62B89AE4" Ref="R?"  Part="1" 
+AR Path="/62B628F2/62B89AE4" Ref="R?"  Part="1" 
+F 0 "R?" V 2293 3050 50  0000 C CNN
+F 1 "1k" V 2384 3050 50  0000 C CNN
+F 2 "" V 2430 3050 50  0001 C CNN
+F 3 "~" H 2500 3050 50  0001 C CNN
+	1    2500 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 2850 2650 3050
+Connection ~ 2650 3050
+Wire Wire Line
+	2650 3050 2650 3150
+Wire Wire Line
+	2350 2650 2350 3050
+Connection ~ 2350 2650
+Wire Wire Line
+	2350 1550 2350 1300
+Connection ~ 2350 1550
+$Comp
+L power:GND1 #PWR?
+U 1 1 62B89AF1
+P 1400 2650
+AR Path="/62B89AF1" Ref="#PWR?"  Part="1" 
+AR Path="/62B628F2/62B89AF1" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 1400 2400 50  0001 C CNN
+F 1 "GND1" H 1405 2477 50  0000 C CNN
+F 2 "" H 1400 2650 50  0001 C CNN
+F 3 "" H 1400 2650 50  0001 C CNN
+	1    1400 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

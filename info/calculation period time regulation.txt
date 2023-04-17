@@ -1,0 +1,13 @@
+t = a * v + c
+
+
+t1 = a * v1 + c
+c = t1 - a * v1
+c = t1 - (t2 - t1) * v1 / (v2 - v1)
+
+
+t2 = a * v2 + c
+t2 = a * v2 + t1 - a * v1
+t2 - t1 = a * v2 - a * v1
+t2 - t1 = a * (v2 - v1)
+a = (t2 - t1) / (v2 - v1)

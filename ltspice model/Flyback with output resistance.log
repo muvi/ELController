@@ -1,0 +1,21 @@
+Circuit: * D:\Projekte\ELController\ltspice model\Flyback with output resistance.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Dec 23 02:12:17 2022
+Total elapsed time: 1.809 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 580524
+traniter = 580499
+tranpoints = 261429
+accept = 180816
+rejected = 80613
+matrix size = 21
+fillins = 6
+solver = Normal
+Matrix Compiler1: 1.35 KB object code size  0.2/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.2
+

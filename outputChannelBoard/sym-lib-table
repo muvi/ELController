@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "el_components")(type "KiCad")(uri "/media/Daten/Projekte/ELController/board design/el_components.kicad_sym")(options "")(descr ""))
+)

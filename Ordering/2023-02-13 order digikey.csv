@@ -1,0 +1,6 @@
+project,part,value,footprint,amount_to_buy,vendor,vendor_part,cost_per_item,full_cost,url
+EL Controller Rev.2,69,330,0603,7,digikey,1292-WR06X331JTLCT-ND,0.09,0.63,https://www.digikey.de/de/products/detail/walsin-technology-corporation/WR06X331-JTL/13240667
+EL Controller Rev.2,217,14-Segment Display (4 digits blue),COM-21216,2,digikey,1568-COM-21216-ND,2.29,4.58,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21216/16892526
+EL Controller Rev.2,218,74HC595,DHVQFN16,6,digikey,1727-3327-1-ND,0.39,2.34,https://www.digikey.de/de/products/detail/nexperia-usa-inc/74HC595BQ-115/1022994
+EL Controller Rev.2,220,68nF 250V,1206,64,digikey,399-17900-1-ND,0.21,13.44,https://www.digikey.de/de/products/detail/kemet/C1206C683KARECAUTO/8640494
+EL Controller Rev.2,221,2.2uH,MGAH0603,2,digikey,240-MGAH06032R2M-10CT-ND,0.44,0.88,https://www.digikey.de/de/products/detail/laird-signal-integrity-products/MGAH06032R2M-10/16731145

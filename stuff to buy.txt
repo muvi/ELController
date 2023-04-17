@@ -1,0 +1,8 @@
+| pushbuttons
+| ceramic versions of filter capacitors (120nF)
+| board
+- fume extractor
+- thermal camera
+| components from mouser
+| bit screwdriver
+| bigger electrolytic capacitor for output

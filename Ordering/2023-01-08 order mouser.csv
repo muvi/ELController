@@ -1,0 +1,13 @@
+project;part;value;amount_to_buy;vendor;vendor_part;cost_per_item;full_cost
+EL Controller Rev.2, Part targets;72;DIP 12;2;mouser;490-DS01C-254-S-12BE;0.974;1.948
+EL Controller Rev.2, Part targets;73;Pushbutton;29;mouser;642-MJTP1230;0.074;2.146
+EL Controller Rev.2, Part targets;99;68nF 250V;64;mouser;791-0805B683K251CT;0.16;10.24
+Ideal diode Rev.1, EL Controller Rev.2;100;4V7;10;mouser;BZX84-C4V7,235;0.13;1.3
+Ideal diode Rev.1, EL Controller Rev.2;101;1meg 0.1%;30;mouser;603-RT1206BRE071ML;0.56;16.8
+Ideal diode Rev.1;102;RFN2LAM4STR;6;mouser;755-RFN2LAM4STR;0.56;3.36
+Ideal diode Rev.1, EL Controller Rev.2;103;TC75S59FU(TE85L,F);5;mouser;757-TC75S59FUTE85LF;0.46;2.3
+Ideal diode Rev.1, EL Controller Rev.2;104;NTD250N65S3H;5;mouser;NTD250N65S3H;2.05;10.25
+EL Controller Rev.2;105;100k;2;mouser;AC0603FR-7W100KL;0.1;0.2
+EL Controller Rev.2;106;CMM-4030D-261-I2S-TR;2;mouser;490-CMM4030D261I2STR;2.63;5.26
+Part targets;107;10uF 250V;5;mouser;581-AEF0812100M250R;0.71;3.55
+Part targets;108;22uF 250V;5;mouser;581-AEK1016220M250R;0.94;4.7

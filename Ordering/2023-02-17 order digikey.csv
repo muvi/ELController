@@ -1,0 +1,15 @@
+project,part,value,footprint,amount_to_buy,vendor,vendor_part,cost_per_item,full_cost,url
+EL Controller Rev.2,69,330,0603,7,digikey,1292-WR06X331JTLCT-ND,0.09,0.63,https://www.digikey.de/de/products/detail/walsin-technology-corporation/WR06X331-JTL/13240667
+"EL Controller Rev.2, Part targets",217,14-Segment Display (4 digits blue),COM-2121X,2,digikey,1568-COM-21216-ND,2.29,4.58,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21216/16892526
+EL Controller Rev.2,218,74HC595,DHVQFN16,6,digikey,1727-3327-1-ND,0.39,2.34,https://www.digikey.de/de/products/detail/nexperia-usa-inc/74HC595BQ-115/1022994
+EL Controller Rev.2,220,68nF 250V,1206,64,digikey,399-17900-1-ND,0.21,13.44,https://www.digikey.de/de/products/detail/kemet/C1206C683KARECAUTO/8640494
+EL Controller Rev.2,221,2.2uH,MGAH0603,2,digikey,240-MGAH06032R2M-10CT-ND,0.44,0.88,https://www.digikey.de/de/products/detail/laird-signal-integrity-products/MGAH06032R2M-10/16731145
+EL Controller Rev.2,222,100@100MHz 6A,1806,2,digikey,1934-1315-1-ND,0.18,0.36,https://www.digikey.de/de/products/detail/fair-rite-products-corp/2518061017Y6/8594253
+"EL Controller Rev.2, EL Controller Rev.2",223,600@100MHz 2A,0805,8,digikey,1934-1487-1-ND,0.09,0.72,https://www.digikey.de/de/products/detail/fair-rite-products-corp/2508056017Y2/8594310
+EL Controller Rev.2,225,100uF 250V,Radial_D18_P7.5,4,digikey,565-EKXJ251ELL101ML20S-ND,1.72,6.88,https://www.digikey.de/de/products/detail/united-chemi-con/EKXJ251ELL101ML20S/3528992
+EL Controller Rev.2,226,230@100MHz 5A,FairRite_2744051447,2,digikey,1934-1378-1-ND,0.51,1.02,https://www.digikey.de/de/products/detail/fair-rite-products-corp/2744051447/8594230
+Part targets,227,14-Segment Display (4 digits red),COM-2121X,1,digikey,1568-COM-21217-ND,2.34,2.34,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21217/16892550
+Part targets,228,14-Segment Display (4 digits green),COM-2121X,1,digikey,1568-COM-21212-ND,2.34,2.34,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21212/16892504
+Part targets,229,14-Segment Display (4 digits white),COM-2121X,1,digikey,1568-COM-21213-ND,2.34,2.34,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21213/16892511
+Part targets,230,14-Segment Display (4 digits purple),COM-2121X,1,digikey,1568-COM-21215-ND,2.34,2.34,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21215/16892525
+Part targets,231,14-Segment Display (4 digits pink),COM-2121X,1,digikey,1568-COM-21214-ND,2.34,2.34,https://www.digikey.de/de/products/detail/sparkfun-electronics/COM-21214/16892534

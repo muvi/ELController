@@ -1,0 +1,9 @@
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave 5 inverse with dead time 2.csv"
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave 5 inverse with dead time.csv"
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave 5 with dead time.csv"
+
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave half waves inverse with dead time.csv"
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave half waves with dead time.csv"
+
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave 5 inverse.csv"
+"D:\Projekte\ELController\ltspice model\PWL\output sine wave 5.csv"

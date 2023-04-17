@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "EL-footprints")(type "KiCad")(uri "${KIPRJMOD}/../board design/EL-footprints.pretty")(options "")(descr ""))
+)

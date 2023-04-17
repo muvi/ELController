@@ -1,0 +1,39 @@
+Circuit: * D:\Projekte\ELController\ltspice model\Output MOSFET Test seperate with P pullup.asc
+
+Limiting rise time of source v9 to 5e-006
+Limiting fall time of source v9 to 5e-006
+Limiting rise time of source v5 to 5e-006
+Limiting fall time of source v5 to 5e-006
+WARNING: Node N004 is floating.
+WARNING: Node N012 is floating.
+
+Instance "m:u2:os": Width narrower than recommended for a level 3 MOSFET.
+Instance "m:u1:2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:u1:1": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 2.92969e-011
+Changing Tseed to 2.92969e-013
+Changing Tseed to 2.92969e-010
+Heightened Def Con from 2.50002e-006 to 2.50402e-006
+Heightened Def Con from 5.75e-005 to 5.7505e-005
+Heightened Def Con from 0.0001025 to 0.000102501
+Heightened Def Con from 0.00015785 to 0.000157856
+Heightened Def Con from 0.000202501 to 0.000202507
+
+Date: Wed Mar 30 20:23:23 2022
+Total elapsed time: 0.082 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8196
+traniter = 8160
+tranpoints = 2797
+accept = 2248
+rejected = 551
+matrix size = 47
+fillins = 32
+solver = Normal
+Matrix Compiler1: 4.62 KB object code size  0.7/0.4/[0.2]
+Matrix Compiler2: off  [0.2]/0.4/0.4
+

@@ -1,0 +1,2 @@
+.model TN2130 VDMOS(Vto=2.4 Kp=0.01889 BV=300 Rd=2 Rs=23 Rg=1 Rds=3meg Cgs=10p Cgdmin=5p Cgdmax=40p Tnom=25 )
+.model TP5335 VDMOS(Vto=-2.4 Kp=0.01889 BV=-350 Rd=3 Rs=27 Rg=1 Rds=3meg Cgs=38p Cgdmin=22p Cgdmax=72p pchan Tnom=25 )

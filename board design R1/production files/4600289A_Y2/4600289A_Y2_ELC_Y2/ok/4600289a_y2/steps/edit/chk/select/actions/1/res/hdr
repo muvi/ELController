@@ -1,0 +1,23 @@
+STAT = D
+SEVERITY = 0
+LAST_TIME = 1655202997
+DURATION = 3 SECONDS
+CATEGORY {
+    NAME = sub
+    TITLE = Constructed Pads
+    DESCRIPTION = Width;Pad
+    SORT_ORDER = 0
+    RANGE = 1.0000000 1.0010000 1.0020000 
+}
+CATEGORY {
+    NAME = fail
+    TITLE = Failed to construct Pads
+    DESCRIPTION = Location
+    SORT_ORDER = 1
+    RANGE = 1.0000000 1.0010000 1.0020000 
+}
+ATTRIBUTE {
+    tl_construct = 3
+    bl_construct = 0
+    construct = 3
+}

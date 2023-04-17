@@ -1,0 +1,33 @@
+*Nov 19, 2012
+*ECN S12-2747, Rev. B
+*File Name: Si7119DN_PS.txt and Si7119DN_PS.lib
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product datasheet.  Designers should refer to the
+*appropriate datasheet of the same number for guaranteed specification
+*limits.
+.SUBCKT Si7119DN D G S
+M1  3  GX S S PMOS W=1540812u L=0.25u          
+M2  S  GX S D NMOS W=1540812u L=0.35u 
+RG  G  GX     5.3
+R1  D  3      RTEMP 70E-2
+CGS GX S      550E-12
+DBD D  S      DBD
+***************************************************************  
+.MODEL  PMOS       PMOS  ( LEVEL  = 3           TOX    = 7E-8
++ RS     = 14E-2           RD     = 0           NSUB   = 1.45E17
++ KP     = 3.4E-6          UO     = 400             
++ VMAX   = 0               XJ     = 5E-7        KAPPA  = 2E-4
++ ETA    = 1E-4            TPG    = -1  
++ IS     = 0               LD     = 0                        
++ CGSO   = 0               CGDO   = 0           CGBO   = 0 
++ NFS    = 0.8E12          DELTA  = 0.1)
+*************************************************************** 
+.MODEL  NMOS       NMOS  ( LEVEL  = 3           TOX    = 7E-8
++NSUB    = 1E16            NFS    = 1E12 )   
+*************************************************************** 
+.MODEL DBD D (CJO=80E-12 VJ=0.38 M=0.34
++RS=0.1 FC=0.5 IS=1E-12 TT=1E-8 N=1 BV=215)
+*************************************************************** 
+.MODEL RTEMP RES (TC1=11E-3 TC2=5.5E-6)
+*************************************************************** 
+.ENDS

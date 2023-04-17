@@ -1,0 +1,8 @@
+clock speeds: 866
+Multiplexing: 29
+ADC (Register usage): 799
+Packaging information: 1077
+Clock speeds: 866
+ADC sample hold time: 884
+Exposed Pad connection: 1078 bottom of the page
+External Reset Ciruitry: 1114

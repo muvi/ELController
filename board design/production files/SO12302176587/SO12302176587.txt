@@ -1,0 +1,5 @@
+MODEL:ELController-gerbers_Y4 
+SIZE:420*320MM  T=0.12MM
+DATE:2023-02-20 22:00  
+NO:SO12302176587    4600289A (ÍâÃ³)   
+[ÎÞÂÁ¿ò¸ÖÆ¬]

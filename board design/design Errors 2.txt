@@ -1,0 +1,9 @@
+- Micorphone footprint wrong
+- neu bom erzeugen, C135 nicht mehr NU
+- GPIO Text inside connector
+- NU parts in output_enable circuit entfernen
+- Remove zero ohm in output channels
+- footprint outline for Display shifted slightly on silkscreen (and courtyard?)
+- swap LED against a more heat stable one
+- more Testpoints for output channel H bridge
+. distancxes for fill in output channels to low

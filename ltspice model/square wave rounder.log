@@ -1,0 +1,21 @@
+Circuit: * D:\Projekte\ELController\ltspice model\square wave rounder.asc
+
+.OP point found by inspection.
+
+Date: Mon Apr 10 18:56:01 2023
+Total elapsed time: 0.034 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3796
+traniter = 3796
+tranpoints = 1899
+accept = 1790
+rejected = 109
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 200 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 394 bytes object code size  0.1/0.1/[0.1]
+
