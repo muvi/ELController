@@ -111,19 +111,25 @@ void output_channels_init_4_5_6_7_8() {
 	output_channels_init_tc(TC7_IRQn, TC7, CH8P, CH8N, PINMUX_PB22E_TC7_WO0, PINMUX_PB23E_TC7_WO1);
 }
 
+int8_t tcc0_counter = 3;
+
 void TCC0_Handler() {
 	hri_tcc_clear_interrupt_OVF_bit(TCC0);
 
-	//channel 1
-	SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[0]));
-	hri_tcc_write_CCB_reg_no_lock(TCC0, 2, next_value.pos);
-	hri_tcc_write_CCB_reg_no_lock(TCC0, 3, next_value.neg);
+	tcc0_counter = (tcc0_counter + 1) & 0b11;
+
+	if (!tcc0_counter) {
+		//channel 1
+		SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[0]));
+		hri_tcc_write_CCB_reg_no_lock(TCC0, 2, next_value.pos);
+		hri_tcc_write_CCB_reg_no_lock(TCC0, 3, next_value.neg);
 		
-	//channel 2
-	next_value = sine_wave_next(&(output_channels_wave_form[1]));
-	hri_tcc_write_CCB_reg_no_lock(TCC0, 0, next_value.pos);
-	hri_tcc_write_CCB_reg_no_lock(TCC0, 1, next_value.neg);
-	//gpio_set_pin_level(LED2, next_value.pos != 0);
+		//channel 2
+		next_value = sine_wave_next(&(output_channels_wave_form[1]));
+		hri_tcc_write_CCB_reg_no_lock(TCC0, 0, next_value.pos);
+		hri_tcc_write_CCB_reg_no_lock(TCC0, 1, next_value.neg);
+		//gpio_set_pin_level(LED2, next_value.pos != 0);
+	}
 }
 
 void TCC2_Handler() {

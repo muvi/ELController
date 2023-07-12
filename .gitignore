@@ -1,2 +1,7 @@
 datasheets/
 ltspice model/*.raw
+board design/ELController-backups
+code/ELController/My Project/Debug
+*.log
+code/ELController/My Project/.project-backup
+code (copy)

@@ -53,7 +53,7 @@ int8_t TIMER_1_init()
 	                        0 << TCC_CTRLA_ALOCK_Pos             /* Auto Lock: disabled */
 	                            | 0 << TCC_CTRLA_PRESCSYNC_Pos   /* Prescaler and Counter Synchronization: 0 */
 	                            | 0 << TCC_CTRLA_RUNSTDBY_Pos    /* Run in Standby: disabled */
-	                            | 3 << TCC_CTRLA_PRESCALER_Pos); /* Setting: 3 */
+	                            | 1 << TCC_CTRLA_PRESCALER_Pos); /* Setting: 1 */
 
 	// hri_tcc_write_CTRLB_reg(TCC0,0 << TCC_CTRLBSET_CMD_Pos /* TCC Command: 0 */
 	//		 | 0 << TCC_CTRLBSET_IDXCMD_Pos /* Ramp Index Command: 0 */

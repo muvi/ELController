@@ -5,5 +5,6 @@
 - Remove zero ohm in output channels
 - footprint outline for Display shifted slightly on silkscreen (and courtyard?)
 - swap LED against a more heat stable one
-- more Testpoints for output channel H bridge
-. distancxes for fill in output channels to low
+- more Testpoints for output channel H bridge (at least one directly before each gate)
+- distancxes for fill in output channels to low (solved?)
+- silkscreen for display right shifted slightly

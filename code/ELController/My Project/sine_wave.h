@@ -847,11 +847,14 @@ static inline SineWaveSample sine_wave_next(SineWave* sine) {
 	sample.neg = SINE_WAVE_MAX_AMPLITUDE - ((int16_t) sine->amplitude) + result;
 	
 	//square wave modification
+	/*
 	sample.pos = sample.pos >= 0x7F ? 0xFF : 0x00;
 	sample.neg = sample.neg >= 0x7F ? 0xFF : 0x00;
+	*/
 	
 	//sample.incrementing = result > sine->last_output;
 	//sine->last_output = result;
+	//wrong sine wave
 	/*
 	if (result >= 0) {
 		sample.pos = result;

@@ -9,4 +9,4 @@ FROM bom
   LEFT JOIN project ON project.project = bom.project
   LEFT JOIN part ON part.part = bom.part
 WHERE project.short = 'elcontroller2'
-  AND bom.designator || bom.designator_nr IN ('C98')
+  AND bom.designator || bom.designator_nr IN ('Q9')
