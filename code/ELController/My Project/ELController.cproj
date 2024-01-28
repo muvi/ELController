@@ -156,9 +156,9 @@
           <AcmeProjectActionInfo Action="File" Source="hpl/spi/spi_lite.c" IsConfig="false" Hash="sCR8oC7Co4IATz93H+A2ug" />
           <AcmeProjectActionInfo Action="File" Source="hpl/spi/spi_lite.h" IsConfig="false" Hash="SP4LBsp0JbmNhzsM2LDiWw" />
           <AcmeProjectActionInfo Action="File" Source="hpl/sysctrl/hpl_sysctrl.c" IsConfig="false" Hash="d4wIg1swqGafMtp4ATkI2w" />
-          <AcmeProjectActionInfo Action="File" Source="hpl/tc/tc_lite.c" IsConfig="false" Hash="Fs8H9+u2T2KU4xatn0Op2A" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/tc/tc_lite.c" IsConfig="false" Hash="wU2ga4mbD8Q/UprpPmq6mA" />
           <AcmeProjectActionInfo Action="File" Source="hpl/tc/tc_lite.h" IsConfig="false" Hash="EcfbS31v0WQt4OSBocUWLg" />
-          <AcmeProjectActionInfo Action="File" Source="hpl/tcc/tcc_lite.c" IsConfig="false" Hash="ogssrbcg5Za5OXgRKpEM9A" />
+          <AcmeProjectActionInfo Action="File" Source="hpl/tcc/tcc_lite.c" IsConfig="false" Hash="E919lGmfl3+B0cECapPMGg" />
           <AcmeProjectActionInfo Action="File" Source="hpl/tcc/tcc_lite.h" IsConfig="false" Hash="XfS02K7dZUbaaVZQboAQFg" />
           <AcmeProjectActionInfo Action="File" Source="hpl/usart/usart_lite.c" IsConfig="false" Hash="F+XfeN2aZVMYQR5SOwf7hw" />
           <AcmeProjectActionInfo Action="File" Source="hpl/usart/usart_lite.h" IsConfig="false" Hash="bOOkn8c85aSs69/Ped/llg" />

@@ -51,7 +51,7 @@ int8_t TIMER_3_init()
 	hri_tc_write_CTRLA_reg(TC3,
 	                       0 << TC_CTRLA_PRESCSYNC_Pos       /* Prescaler and Counter Synchronization: 0 */
 	                           | 0 << TC_CTRLA_RUNSTDBY_Pos  /* Run in Standby: disabled */
-	                           | 3 << TC_CTRLA_PRESCALER_Pos /* Setting: 3 */
+	                           | 1 << TC_CTRLA_PRESCALER_Pos /* Setting: 1 */
 	                           | 2 << TC_CTRLA_WAVEGEN_Pos   /* Waveform Generation Operation: 2 */
 	                           | 0x1 << TC_CTRLA_MODE_Pos);  /* Operating Mode: 0x1 */
 
@@ -113,7 +113,7 @@ int8_t TIMER_5_init()
 	hri_tc_write_CTRLA_reg(TC4,
 	                       0 << TC_CTRLA_PRESCSYNC_Pos       /* Prescaler and Counter Synchronization: 0 */
 	                           | 0 << TC_CTRLA_RUNSTDBY_Pos  /* Run in Standby: disabled */
-	                           | 3 << TC_CTRLA_PRESCALER_Pos /* Setting: 3 */
+	                           | 1 << TC_CTRLA_PRESCALER_Pos /* Setting: 1 */
 	                           | 2 << TC_CTRLA_WAVEGEN_Pos   /* Waveform Generation Operation: 2 */
 	                           | 0x1 << TC_CTRLA_MODE_Pos);  /* Operating Mode: 0x1 */
 
@@ -175,7 +175,7 @@ int8_t TIMER_6_init()
 	hri_tc_write_CTRLA_reg(TC5,
 	                       0 << TC_CTRLA_PRESCSYNC_Pos       /* Prescaler and Counter Synchronization: 0 */
 	                           | 0 << TC_CTRLA_RUNSTDBY_Pos  /* Run in Standby: disabled */
-	                           | 3 << TC_CTRLA_PRESCALER_Pos /* Setting: 3 */
+	                           | 1 << TC_CTRLA_PRESCALER_Pos /* Setting: 1 */
 	                           | 2 << TC_CTRLA_WAVEGEN_Pos   /* Waveform Generation Operation: 2 */
 	                           | 0x1 << TC_CTRLA_MODE_Pos);  /* Operating Mode: 0x1 */
 
@@ -237,7 +237,7 @@ int8_t TIMER_4_init()
 	hri_tc_write_CTRLA_reg(TC6,
 	                       0 << TC_CTRLA_PRESCSYNC_Pos       /* Prescaler and Counter Synchronization: 0 */
 	                           | 0 << TC_CTRLA_RUNSTDBY_Pos  /* Run in Standby: disabled */
-	                           | 3 << TC_CTRLA_PRESCALER_Pos /* Setting: 3 */
+	                           | 1 << TC_CTRLA_PRESCALER_Pos /* Setting: 1 */
 	                           | 2 << TC_CTRLA_WAVEGEN_Pos   /* Waveform Generation Operation: 2 */
 	                           | 0x1 << TC_CTRLA_MODE_Pos);  /* Operating Mode: 0x1 */
 
@@ -299,7 +299,7 @@ int8_t TIMER_7_init()
 	hri_tc_write_CTRLA_reg(TC7,
 	                       0 << TC_CTRLA_PRESCSYNC_Pos       /* Prescaler and Counter Synchronization: 0 */
 	                           | 0 << TC_CTRLA_RUNSTDBY_Pos  /* Run in Standby: disabled */
-	                           | 3 << TC_CTRLA_PRESCALER_Pos /* Setting: 3 */
+	                           | 1 << TC_CTRLA_PRESCALER_Pos /* Setting: 1 */
 	                           | 2 << TC_CTRLA_WAVEGEN_Pos   /* Waveform Generation Operation: 2 */
 	                           | 0x1 << TC_CTRLA_MODE_Pos);  /* Operating Mode: 0x1 */
 

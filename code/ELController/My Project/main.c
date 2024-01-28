@@ -27,6 +27,7 @@ void btn_enter_pressed() {
 }
 
 void btn_exit_pressed() {
+	hv_dc_supply_enable_output();
 }
 
 uint16_t dmx_address = 0;

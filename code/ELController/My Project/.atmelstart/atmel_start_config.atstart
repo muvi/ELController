@@ -482,7 +482,7 @@ drivers:
       ctrla_control: true
       ctrla_enable: true
       ctrla_mode: 1
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrla_wavegen: NPWM
@@ -553,7 +553,7 @@ drivers:
       ctrla_control: true
       ctrla_enable: true
       ctrla_mode: 1
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrla_wavegen: NPWM
@@ -624,7 +624,7 @@ drivers:
       ctrla_control: true
       ctrla_enable: true
       ctrla_mode: 1
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrla_wavegen: NPWM
@@ -695,7 +695,7 @@ drivers:
       ctrla_control: true
       ctrla_enable: true
       ctrla_mode: 1
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrla_wavegen: NPWM
@@ -766,7 +766,7 @@ drivers:
       ctrla_control: true
       ctrla_enable: true
       ctrla_mode: 1
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrla_wavegen: NPWM
@@ -1741,7 +1741,7 @@ drivers:
       ctrla_alock: false
       ctrla_control: true
       ctrla_enable: true
-      ctrla_prescaler: DIV8
+      ctrla_prescaler: DIV2
       ctrla_prescsync: GCLK
       ctrla_runstdby: false
       ctrlbset_cmd: NONE

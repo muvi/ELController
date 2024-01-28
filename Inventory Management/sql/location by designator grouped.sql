@@ -10,6 +10,6 @@ SELECT
 FROM bom
   LEFT JOIN project ON project.project = bom.project
   LEFT JOIN part ON part.part = bom.part
-WHERE project.short = 'idealdiode1'
-  AND bom.designator || bom.designator_nr IN ('R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'D1', 'D2', 'U1', 'Q1')
+WHERE project.short = 'elcontroller2'
+  AND bom.designator || bom.designator_nr IN ('U12', 'Q9', 'C50', 'Q10', 'L7', 'Q8', 'C46', 'R60', 'R61', 'R59', 'R54', 'R55', 'R56', 'R58')
 GROUP BY part.part

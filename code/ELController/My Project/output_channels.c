@@ -112,7 +112,6 @@ void output_channels_init_4_5_6_7_8() {
 }
 
 int8_t tcc0_counter = 3;
-
 void TCC0_Handler() {
 	hri_tcc_clear_interrupt_OVF_bit(TCC0);
 
@@ -132,20 +131,30 @@ void TCC0_Handler() {
 	}
 }
 
+int tcc2_counter = 3;
 void TCC2_Handler() {
 	hri_tcc_clear_interrupt_OVF_bit(TCC2);
 
-	//channel 3
-	SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[2]));
-	hri_tcc_write_CCB_reg_no_lock(TCC2, 0, next_value.pos);
-	hri_tcc_write_CCB_reg_no_lock(TCC2, 1, next_value.neg);
+	tcc2_counter = (tcc2_counter + 1) & 0b11;
+
+	if (!tcc2_counter) {
+		//channel 3
+		SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[2]));
+		hri_tcc_write_CCB_reg_no_lock(TCC2, 0, next_value.pos);
+		hri_tcc_write_CCB_reg_no_lock(TCC2, 1, next_value.neg);
+	}
 }
 
-#define TC_HANDLER(hw, channel) void hw##_Handler() { \
+#define TC_HANDLER(hw, channel) \
+int hw##_counter = 3; \
+void hw##_Handler() { \
 	hri_tc_clear_interrupt_OVF_bit(hw); \
-	SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[channel])); \
-	hri_tccount8_write_CC_reg_no_lock(hw, 0, next_value.pos); \
-	hri_tccount8_write_CC_reg_no_lock(hw, 1, next_value.neg); \
+	hw##_counter = (hw##_counter + 1) & 0b11; \
+	if (!hw##_counter) { \
+		SineWaveSample next_value = sine_wave_next(&(output_channels_wave_form[channel])); \
+		hri_tccount8_write_CC_reg_no_lock(hw, 0, next_value.pos); \
+		hri_tccount8_write_CC_reg_no_lock(hw, 1, next_value.neg); \
+	} \
 }
 
 TC_HANDLER(TC3, 3)

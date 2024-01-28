@@ -1,0 +1,14 @@
+project;designator;designator_nr;value;part;location;amount_needed;amount_available
+3;C;46;100nF;2;K1;1;220
+3;C;50;1uF 250V;7;b1;1;99
+3;L;7;3.3mH;43;f1;1;94
+3;Q;8;RZM001P02;45;J6;1;81
+3;Q;9;Si7119DN;48;M6;1;82
+3;Q;10;STN4NF20L;49;N6;1;84
+3;R;54;10k;50;O6;1;186
+3;R;59;510;55;N7;1;182
+3;R;58;1k;56;O7;1;113
+3;R;55;0;62;N8;1;113
+3;R;56;100 1/4W;70;O9;2;179
+3;R;60;2.2k;71;J10;1;89
+3;U;12;6N137;75;R1;1;171
